@@ -1,0 +1,9 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+section h1,
+section h2{
+    font-family: 'Dancing Script', cursive;
+}
