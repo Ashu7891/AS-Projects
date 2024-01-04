@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .main{
+            height: 400px;
+            width: 400px;
+            margin: 250px auto;
+        }
+        .battery-top{
+            width: 40px;
+            height: 15px;
+            border: 2px solid white;
+            border-radius: 8px 8px 0px 0px;
+            margin: auto;
+        }
+        .battery-content{
+            height: 300px;
+            width: 200px;
+            border-radius: 10px;
+            border: 2px solid white;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .charging{
+            height: 0%;
+            width: 100%;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            margin: auto;
+            border-radius: 10px;
+            animation: charge 8s linear infinite;
+        }
+        @keyframes charge {
+            0%{
+                background-color: red;
+                height: 0%;
+            }
+            25%{
+                background-color: orange;
+                height: 25%;
+            }
+            50%{
+                background-color: yellow;
+                height: 50%;
+            }
+            75%{
+                background-color: yellowgreen;
+                height: 75%;
+            }
+            100%{
+                background-color: green;
+                height: 100%;
+            }
+        }
+        header{
+            height: 250px;
+            width: 30%;
+            display: flex;
+            margin: 50px auto;
+            gap: 2px;
+        }
+        header img{
+            height: 250px;
+            width: 10%;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+            border: 2px solid white;
+            border-radius: 10px;
+            transition: all 1s;
+        }
+        header img:hover{
+            width: 100%;
+            transform: scale(1.1);
+        }
+        section{
+            display: flex;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            border: 3px solid white;
+            margin: 120px auto;
+            overflow-x: scroll;
+            position: relative;
+        }
+        section img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+            position: sticky;
+            left: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="battery-top"></div>
+        <div class="battery-content">
+            <div class="charging"></div>
+        </div>
+    </div>
+    <header>
+        <img src="images/spiderman 1.jpg" alt="Your Computer has been hanged">
+        <img src="images/spiderman 2.png" alt="Your Computer has been hanged">
+        <img src="images/spiderman 4.jpg" alt="Your Computer has been hanged">
+        <img src="images/spiderman 5.jpg" alt="Your Computer has been hanged">
+        <img src="images/spiderman 3.jpg" alt="Your Computer has been hanged">
+    </header>
+    <section>
+        <img src="images/img 1.avif" alt="Your Computer has been hanged">
+        <img src="images/img 2.jpg" alt="Your Computer has been hanged">
+        <img src="images/img 3.jpg" alt="Your Computer has been hanged">
+        <img src="images/img 4.jpg" alt="Your Computer has been hanged">
+        <img src="images/img 5.jpg" alt="Your Computer has been hanged">
+    </section>
+</body>
+</html>
